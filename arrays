@@ -1,0 +1,32 @@
+#include <iostream>
+//El <iostream proporciona los objetos que pueden leer los datos de entrada y salida del usuario
+#include <iomanip>
+//El <iomanip> es utilizado para gestionar el formato de entrada y salida
+using namespace std;
+ 
+ const int MAX_FOOD = 10;
+//El max food  es el maximo de comidas que se pueden poner
+ const int NUM_NUTRIENTES = 4;
+//Los tipos de nutrintes dentro del programa
+
+ //El array de la lista de los alimentos 
+ string foodNames[MAX_FOOD] = {
+     "manzana", "pollo", "arroz", 
+      "huevo, "pan", "platano",
+      "leche", "tomate", "queso", 
+      "yogurt"
+   };
+  //Valores de nutricionales por cada alimento las cuales son 100 gramos
+  float nutrientes[MAX_FOOD] [NUM_NUTRIENTES] = {
+        {52, 0.3, 14, 0.2},
+        {165, 31, 0, 3.6},
+        {130, 2.4, 28, 0.3},
+        {155, 13, 1.1, 11},
+        {265, 9, 49, 3.2},
+        {89, 1.1, 23, 0.3},
+        {42, 3.4, 5, 1},
+        {18, 0.6, 3.9, 0.2},
+        {402, 25, 1.3, 33},
+        {59, 10, 3.6, 0.4}
+    };
+    
